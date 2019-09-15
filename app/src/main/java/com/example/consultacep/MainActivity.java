@@ -74,11 +74,9 @@ public class MainActivity extends AppCompatActivity {
                                MainActivity.this.runOnUiThread(new Runnable() {
                                    @Override
                                    public void run() {
-                                       logradouro.setText("");
-                                       complemento.setText("");
-                                       bairro.setText("");
-                                       localidade.setText("");
-                                       uf.setText("");
+                                       builder.setTitle("Erro");
+                                       builder.setMessage("Não foi possível obter uma resposta.");
+                                       builder.show();
                                    }
                                });
                            }
